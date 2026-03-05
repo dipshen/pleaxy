@@ -15,8 +15,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'docs'),
-    publicPath: '/pleaxy/'
+    path: path.resolve(__dirname, 'docs')
+    // publicPath: '/pleaxy/'
     // clean: true
   },
   module: {
@@ -96,6 +96,51 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // Вибропуля
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_vibro_bullet.html',
+      filename: './pages/sextoy_vibro_bullet.html',
+      chunks: ['index']
+    }),
+
+    // Фаллоимитатор
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_dildo.html',
+      filename: './pages/sextoy_dildo.html',
+      chunks: ['index']
+    }),
+
+    // Вибратор
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_vibrator.html',
+      filename: './pages/sextoy_vibrator.html',
+      chunks: ['index']
+    }),
+
+    // Клиторальный стимулятор
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_clitoral_ctimulator.html',
+      filename: './pages/sextoy_clitoral_ctimulator.html',
+      chunks: ['index']
+    }),
+
+    // Анальная пробка
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_butt_plug.html',
+      filename: './pages/sextoy_butt_plug.html',
+      chunks: ['index']
+    }),
+
     // Атрибуты
     new HtmlWebpackPlugin({
       hash: true,
@@ -120,6 +165,22 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_analingus.html',
       filename: './pages/practice_analingus.html',
+      chunks: ['index']
+    }),
+    // Кунилингус
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/practice_kunilingus.html',
+      filename: './pages/practice_kunilingus.html',
+      chunks: ['index']
+    }),
+    // Минет
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/practice_minet.html',
+      filename: './pages/practice_minet.html',
       chunks: ['index']
     }),
 
