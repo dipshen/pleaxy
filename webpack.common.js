@@ -167,6 +167,7 @@ module.exports = {
       filename: './pages/practice_analingus.html',
       chunks: ['index']
     }),
+
     // Кунилингус
     new HtmlWebpackPlugin({
       hash: true,
@@ -175,12 +176,40 @@ module.exports = {
       filename: './pages/practice_kunilingus.html',
       chunks: ['index']
     }),
+
     // Минет
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/pages/practice_minet.html',
       filename: './pages/practice_minet.html',
+      chunks: ['index']
+    }),
+
+    // Ролевые игры
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/practice_role_games.html',
+      filename: './pages/practice_role_games.html',
+      chunks: ['index']
+    }),
+
+    // Петтинг
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/practice_petting.html',
+      filename: './pages/practice_petting.html',
+      chunks: ['index']
+    }),
+
+    // Ваксплей
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/practice_waxplay.html',
+      filename: './pages/practice_waxplay.html',
       chunks: ['index']
     }),
 
