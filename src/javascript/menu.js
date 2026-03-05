@@ -1,9 +1,9 @@
 import logo from '../images/logo.svg'
 document.addEventListener('DOMContentLoaded', function () {
   const MENU_ITEMS = [
-    { href: '/inventory.html', text: 'Инвентарь' },
-    { href: '/practices.html', text: 'Практики' }, // исправил "Пракики" → "Практики"
-    { href: '/articles.html', text: 'Статьи' }
+    { href: './inventory.html', text: 'Инвентарь' },
+    { href: './practices.html', text: 'Практики' }, // исправил "Пракики" → "Практики"
+    { href: './articles.html', text: 'Статьи' }
   ]
 
   const menuContainer = document.getElementById('menu')
