@@ -1,0 +1,27 @@
+.SO_Section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 6.9vw auto 0;
+  gap: 2.8vw;
+  width: 86.1vw;
+  max-width: 1240px;
+
+  @media (max-width: 834px) {
+    max-width: 760px;
+    min-width: 0;
+    margin: 14vw auto 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  @media (max-width: 430px) {
+    min-width: 0;
+    margin-top: 16vw;
+    padding: 0 16px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    align-self: center;
+  }
+}

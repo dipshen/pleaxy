@@ -1,16 +1,16 @@
 {
-  "name": "static-site-boilerplate",
+  "name": "pleaxy",
   "version": "2.0.0",
-  "author": "Zakhar Day",
+  "author": "dianapshen",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https:///github.com/ZakharDay/static-site-boilerplate"
+    "url": "git+https://github.com/dipshen/pleaxy"
   },
   "bugs": {
-    "url": "https://github.com/ZakharDay/static-site-boilerplate/issues"
+    "url": "https://github.com/dipshen/pleaxy/issues"
   },
-  "homepage": "https://github.com/ZakharDay/static-site-boilerplate#readme",
+  "homepage": "https://github.com/dipshen/pleaxy#readme",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js",
@@ -43,6 +43,8 @@
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "airtable": "^0.12.2",
+    "static-source-data": "^1.0.0"
   }
 }

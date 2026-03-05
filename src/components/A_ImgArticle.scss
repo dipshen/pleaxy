@@ -1,0 +1,25 @@
+.A_ImgArticle {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  border-radius: 4rem 4rem 0 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 834px) {
+    border-radius: 3rem 3rem 0 0;
+  }
+
+  @media (max-width: 430px) {
+    border-radius: 2rem 2rem 0 0;
+  }
+}

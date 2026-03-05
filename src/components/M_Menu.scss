@@ -1,0 +1,28 @@
+.M_Menu {
+  display: inline-flex;
+  width: 23.1vw;
+  height: 3.3vw;
+  padding: 0 0.3vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  background: rgba(244, 244, 244, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 834px) {
+    width: 100%;
+    height: 100%;
+    padding: 0.5vw 0.5vw;
+    min-height: 38px;
+    border-radius: 3rem;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+    height: 4.2vw;
+    padding: 0.8vw 2vw;
+    min-height: 44px;
+    border-radius: 2rem;
+  }
+}

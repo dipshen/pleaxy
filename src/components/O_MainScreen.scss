@@ -1,0 +1,82 @@
+.O_MainScreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  h1 {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter Tight';
+    font-size: 4.9vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    justify-self: center;
+    position: absolute;
+    top: 15.3vw;
+  }
+  h4 {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter Tight';
+    font-size: 2.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 42.6vw;
+    justify-self: center;
+    position: absolute;
+    top: 21.2vw;
+  }
+
+  @media (max-width: 834px) {
+    height: 65vw;
+    min-height: 400px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 4.2vw;
+      top: 12vw;
+    }
+    h4 {
+      font-size: 2.2vw;
+      width: 70vw;
+      top: 18vw;
+    }
+  }
+
+  @media (max-width: 430px) {
+    padding: 0 16px;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 7.4vw;
+      top: 12vw;
+    }
+    h4 {
+      font-size: 4.2vw;
+      width: 100%;
+      max-width: 320px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 22vw;
+    }
+  }
+}
+
+.DisplayNone {
+  @media (max-width: 834px) {
+    display: none;
+  }
+  @media (max-width: 430px) {
+    display: none;
+  }
+}

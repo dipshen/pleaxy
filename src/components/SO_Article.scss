@@ -1,0 +1,25 @@
+.SO_Article {
+  display: flex;
+  width: 56.9vw;
+  max-width: 760px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.1vw;
+  margin-bottom: 6.9vw;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+
+  @media (max-width: 834px) {
+    max-width: 760px;
+    gap: 2vw;
+    margin-top: 2vw;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+    gap: 4vw;
+    padding: 0 16px;
+    margin-top: 28vw;
+  }
+}

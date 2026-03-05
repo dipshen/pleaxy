@@ -1,0 +1,23 @@
+.A_pText {
+  color: #000;
+  font-family: 'Inter Tight';
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  max-width: 56.9vw;
+
+  @media (max-width: 834px) {
+    font-size: 2.8vw; /* 24px */
+    max-width: 90vw;
+  }
+
+  @media (max-width: 430px) {
+    font-size: 4.2vw; /* 18px */
+    max-width: 90vw;
+  }
+}

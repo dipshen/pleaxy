@@ -1,0 +1,25 @@
+.M_CardArticleText {
+  display: flex;
+  padding: 2.1vw 2.1vw 1.5vw 2.1vw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.8vw;
+  min-width: 0;
+  overflow: hidden;
+  flex: 1;
+  box-sizing: border-box;
+
+  .A_H3,
+  .A_ArticleCategory {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+
+  @media (max-width: 834px) {
+    padding: 2vw 2vw 1.5vw 2vw;
+  }
+
+  @media (max-width: 430px) {
+    padding: 2vw;
+  }
+}

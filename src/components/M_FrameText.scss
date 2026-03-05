@@ -1,0 +1,39 @@
+.M_FrameText {
+  display: flex;
+  width: 56.9vw;
+  max-width: 760px;
+  padding: 2.1vw 2.5vw 2.4vw 2.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7vw;
+  border-radius: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 834px) {
+    width: 100%;
+    max-width: 760px;
+    border-radius: 2rem;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+    border-radius: 2rem;
+  }
+}
+
+.M_FrameText--pink {
+  border: 0.1vw solid #ff88be;
+}
+.M_FrameText--purpur {
+  border: 0.1vw solid #7276f3;
+}
+.M_FrameText--blue {
+  border: 0.1vw solid #78aaff;
+}
+.M_FrameText--orange {
+  border: 0.1vw solid #ff8989;
+}
+.M_FrameText--yellow {
+  border: 0.1vw solid #ffd288;
+}

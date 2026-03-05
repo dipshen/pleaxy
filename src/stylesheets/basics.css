@@ -1,18 +1,51 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  font-size: 10px;
+}
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'InterTight', sans-serif;
+  font-weight: 500;
+  gap: 7vw;
 }
 
-.images {
+@media (max-width: 834px) {
+  body > .SO_Section,
+  body > .SO_MainToys,
+  body > .SO_MainPractices,
+  body > .SO_MainArticles {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 760px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 430px) {
+  body > .SO_Section,
+  body > .SO_MainToys,
+  body > .SO_MainPractices,
+  body > .SO_MainArticles {
+    flex-shrink: 0;
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.article {
+  gap: 3rem;
+}
+
+/* .images {
   display: flex;
 
   * {
@@ -20,18 +53,4 @@ body {
     height: 24px;
     margin: 0 10px;
   }
-
-  .image {
-    &#bgPNG {
-      background-image: url('../images/image.png');
-    }
-
-    &#bgJPG {
-      background-image: url('../images/image.jpg');
-    }
-
-    &#bgSVG {
-      background-image: url('../images/image.svg');
-    }
-  }
-}
+} */

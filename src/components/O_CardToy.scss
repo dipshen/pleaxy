@@ -1,0 +1,22 @@
+.O_CardToy {
+  width: 27.8vw;
+  height: 34.7vw;
+  position: relative;
+  border-radius: 4rem;
+  background: #f4f4f4;
+  text-decoration: none;
+
+  @media (max-width: 834px) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 370 / 460;
+    border-radius: 3rem;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1.24;
+    border-radius: 2rem;
+  }
+}

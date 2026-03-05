@@ -1,0 +1,30 @@
+.O_CardPractice {
+  width: 27.8vw;
+  height: 21.3vw;
+  position: relative;
+  border-radius: 4rem;
+  background: #f4f4f4;
+  text-decoration: none;
+
+  .A_Blur {
+    background: rgba(180, 180, 180, 0.05);
+  }
+  .A_Blur:hover {
+    background: rgba(180, 180, 180, 0.05);
+    backdrop-filter: blur(10px);
+  }
+
+  @media (max-width: 834px) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 370 / 283;
+    border-radius: 3rem;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 0.8;
+    border-radius: 2rem;
+  }
+}

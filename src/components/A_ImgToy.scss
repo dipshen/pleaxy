@@ -1,0 +1,19 @@
+.A_ImgToy {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4rem;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 834px) {
+    border-radius: 3rem;
+  }
+
+  @media (max-width: 430px) {
+    border-radius: 2rem;
+  }
+}

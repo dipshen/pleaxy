@@ -1,22 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>static-site-boilerplate index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pleaxy — медиа о разнообразии в сексе</title>
+    <script src="./javascript/menu.js"></script>
+    <script src="./javascript/footer.js"></script>
     <analytics></analytics>
   </head>
 
   <body class="index">
-    <div class="images">
-      <div class="image" id="bgPNG"></div>
-      <div class="image" id="bgJPG"></div>
-      <div class="image" id="bgSVG"></div>
-      <img src="images/image.png" />
-      <img src="images/image.jpg" />
-      <img src="images/image.svg" />
+    <nav id="menu"></nav>
+
+    <div class="O_MainScreen">
+      <img src="images/MainScreen.jpg" alt="" />
+      <h1>Онлайн медиа pleaxy</h1>
+      <h4>
+        Подробно и&nbsp;открыто пишем о&nbsp;разнообразии в&nbsp;сексе,
+        секс-игрушках и&nbsp;практиках
+      </h4>
     </div>
 
-    <div>This is a landing page</div>
-    <a href="./pages/page.html">Go to an internal page</a>
+    <div class="SO_MainToys">
+      <h1 class="A_H1">Секс-игрушки</h1>
+      <div class="C_CardsToys">
+        <a class="O_CardToy" href="./pages/sextoy_rabbit_vibrator.html">
+          <img class="A_ImgToy" src="images/Vibrator_rabbit.png" alt="" />
+          <div class="A_Blur">
+            <h3 class="A_H3">Вибратор-кролик</h3>
+          </div>
+        </a>
+        <a class="O_CardToy" href="">
+          <img class="A_ImgToy" src="images/Vibro_bullet.png" alt="" />
+          <div class="A_Blur">
+            <h3 class="A_H3">Вибропуля</h3>
+          </div>
+        </a>
+        <a class="O_CardToy DisplayNone" href="">
+          <img class="A_ImgToy" src="images/Dildo.png" alt="" />
+          <div class="A_Blur">
+            <h3 class="A_H3">Фаллоимитатор</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="SO_MainPractices">
+      <h1 class="A_H1">Секс-практики</h1>
+      <div class="C_CardsPractices">
+        <a class="O_CardPractice" href="./pages/practice_analingus.html">
+          <img class="A_ImgPractice" src="images/Card_Anilingus.jpg" alt="" />
+          <div class="A_Blur">
+            <h3 class="A_H3">Анилингус</h3>
+          </div>
+        </a>
+        <a class="O_CardPractice" href="">
+          <img class="A_ImgPractice" src="images/Card_Kunilingus.jpg" alt="" />
+          <div class="A_Blur">
+            <h3 class="A_H3">Кунилингус</h3>
+          </div>
+        </a>
+        <a class="O_CardPractice DisplayNone" href="">
+          <img class="A_ImgPractice" src="images/Card_Minet.jpg" alt="" />
+          <div class="A_Blur">
+            <h3 class="A_H3">Минет</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="SO_MainArticles">
+      <h1 class="A_H1">Статьи</h1>
+      <div class="C_CardsArticles">
+        <a class="O_CardArticle" href="./pages/article_sextoys_care.html">
+          <div class="M_ImgBlurArticle">
+            <img class="A_ImgArticle" src="images/Article_care.jpg" alt="" />
+            <div class="A_Blur"></div>
+          </div>
+          <div class="M_CardArticleText">
+            <h3 class="A_H3">
+              Как ухаживать за секс-игрушками и продлить их жизнь
+            </h3>
+            <div class="A_ArticleCategory A_ArticleCategory--yellow">
+              <p class="A_TextArticleCategory">Совет</p>
+            </div>
+          </div>
+        </a>
+        <a class="O_CardArticle" href="">
+          <div class="M_ImgBlurArticle">
+            <img
+              class="A_ImgArticle"
+              src="images/Article_lubricant.jpg"
+              alt=""
+            />
+            <div class="A_Blur"></div>
+          </div>
+          <div class="M_CardArticleText">
+            <h3 class="A_H3">Лубриканты: какие бывают и как выбирать</h3>
+            <div class="A_ArticleCategory A_ArticleCategory--orange">
+              <p class="A_TextArticleCategory">Гайд</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <!-- <script src="./javascript/menu.js"></script> -->
+    <!-- <script type="module" src="./javascript/footer.js"></script> -->
   </body>
 </html>

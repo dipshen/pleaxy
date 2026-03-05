@@ -1,0 +1,15 @@
+.M_H1text {
+  display: flex;
+  max-width: 56.9vw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1vw;
+
+  @media (max-width: 834px) {
+    max-width: 90vw;
+  }
+
+  @media (max-width: 430px) {
+    max-width: 90vw;
+  }
+}

@@ -1,0 +1,24 @@
+.A_pNavigation {
+  color: rgba(0, 0, 0, 0.48);
+  font-family: 'Inter Tight';
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 56.9vw;
+
+  @media (max-width: 834px) {
+    font-size: 2.4vw; /* 24px */
+    max-width: 90vw;
+  }
+
+  @media (max-width: 430px) {
+    font-size: 3.5vw; /* 15px */
+    max-width: 90vw;
+  }
+}

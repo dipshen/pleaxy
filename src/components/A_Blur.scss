@@ -1,0 +1,27 @@
+.A_Blur {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 4rem;
+  padding: 0 2.1vw 1.8vw 2.1vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: rgba(64, 64, 64, 0.05);
+  backdrop-filter: blur(10px);
+
+  @media (max-width: 834px) {
+    padding: 0 3.4vw 2.8vw 3.4vw;
+    border-radius: 3rem;
+  }
+
+  @media (max-width: 430px) {
+    padding: 0 4.2vw 3.3vw 4.2vw;
+    border-radius: 2rem;
+  }
+}
+.A_Blur:hover {
+  background: none;
+  backdrop-filter: blur(0px);
+  transition: opacity 0.5s ease;
+}

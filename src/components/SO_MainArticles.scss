@@ -1,0 +1,24 @@
+.SO_MainArticles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.8vw;
+  width: 86.1vw;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @media (max-width: 834px) {
+    width: 100%;
+    max-width: 760px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}

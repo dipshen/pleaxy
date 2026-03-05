@@ -1,0 +1,21 @@
+.C_CardsArticles {
+  display: inline-grid;
+  row-gap: 1.4vw;
+  column-gap: 20px;
+  grid-template-rows: repeat(1, fit-content(100%));
+  grid-template-columns: repeat(2, fit-content(100%));
+
+  @media (max-width: 834px) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  @media (max-width: 430px) {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 100%;
+  }
+}

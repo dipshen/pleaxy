@@ -1,0 +1,32 @@
+.A_LineHeadSection {
+  width: 0.3vw;
+  height: 100%;
+  border-radius: 0.5rem;
+  background: #fff;
+
+  @media (max-width: 834px) {
+    border-radius: 3rem;
+    width: 0.6vw;
+  }
+
+  @media (max-width: 430px) {
+    border-radius: 2rem;
+    width: 0.8vw;
+  }
+}
+
+.A_LineHeadSection--pink {
+  background: linear-gradient(180deg, #ff88be 0%, #fff 100%);
+}
+.A_LineHeadSection--purpur {
+  background: linear-gradient(180deg, #8a7ae5 0%, #fff 100%);
+}
+.A_LineHeadSection--blue {
+  background: linear-gradient(180deg, #78aaff 0%, #fff 100%);
+}
+.A_LineHeadSection--orange {
+  background: linear-gradient(180deg, #ff8989 0%, #fff 100%);
+}
+.A_LineHeadSection--yellow {
+  background: linear-gradient(180deg, #ffd288 0%, #fff 100%);
+}

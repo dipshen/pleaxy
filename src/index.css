@@ -3,3 +3,76 @@
 @import 'stylesheets/fonts.css';
 @import 'stylesheets/basics.css';
 @import 'stylesheets/index.css';
+
+/* Меню и Футер */
+@import 'components/A_MenuBottom.scss';
+@import 'components/M_Menu.scss';
+@import 'components/O_Menu.scss';
+@import 'components/O_Footer.scss';
+
+/* Текст */
+@import 'components/A_H1.scss';
+@import 'components/A_H2.scss';
+@import 'components/A_H3.scss';
+@import 'components/A_pText.scss';
+@import 'components/M_H1text.scss';
+@import 'components/M_H2text.scss';
+@import 'components/A_pCaption.scss';
+@import 'components/A_pNavigation.scss';
+@import 'components/A_LineUnderText.scss';
+
+/* Мелкое */
+@import 'components/A_Blur.scss';
+@import 'components/A_LineHeadSection.scss';
+
+/* @import 'components/A_ImageArticle.scss';
+@import 'components/A_MenuBottom.scss'; */
+
+/* Общее */
+@import 'components/O_MainScreen.scss';
+@import 'components/SO_Section.scss';
+@import 'components/O_HeadTextSection.scss';
+
+@import 'components/A_ImgHead.scss';
+@import 'components/M_Navigation.scss';
+
+@import 'components/A_ImgPageArticle.scss';
+@import 'components/M_ImgBlurPageArticle.scss';
+@import 'components/O_ImgCaptionArticle.scss';
+@import 'components/SO_Article.scss';
+@import 'components/M_FrameText.scss';
+
+/* Инвентарь */
+@import 'components/A_ImgInventory.scss';
+@import 'components/O_CardInventory.scss';
+@import 'components/C_CardsInventory.scss';
+
+/* Секс игрушки */
+@import 'components/A_ImgToy.scss';
+@import 'components/O_CardToy.scss';
+@import 'components/C_CardsToys.scss';
+@import 'components/SO_MainToys.scss';
+
+@import 'components/O_HeaderToy.scss';
+
+/* Практики */
+@import 'components/A_ImgPractice.scss';
+@import 'components/O_CardPractice.scss';
+@import 'components/C_CardsPractices.scss';
+@import 'components/SO_MainPractices.scss';
+
+@import 'components/A_ImgHeaderPractice.scss';
+@import 'components/O_HeaderPractice.scss';
+
+/* Статьи */
+@import 'components/A_ImgArticle.scss';
+@import 'components/A_ArticleCategory.scss';
+@import 'components/A_TextArticleCategory.scss';
+@import 'components/M_ImgBlurArticle.scss';
+@import 'components/M_CardArticleText.scss';
+
+@import 'components/O_CardArticle.scss';
+@import 'components/C_CardsArticles.scss';
+@import 'components/SO_MainArticles.scss';
+
+@import 'components/O_HeaderArticle.scss';

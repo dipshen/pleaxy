@@ -1,0 +1,36 @@
+.A_LineUnderText {
+  display: flex;
+  width: 56.9vw;
+  max-width: 760px;
+  height: 0.1vw;
+  padding-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 834px) {
+    width: 100%;
+    max-width: 760px;
+  }
+
+  @media (max-width: 430px) {
+    width: 100%;
+  }
+}
+
+.A_LineUnderText--pink {
+  background: linear-gradient(90deg, #ff88be 0%, #fff 106%);
+}
+.A_LineUnderText--purpur {
+  background: linear-gradient(90deg, #7276f3 0%, #fff 106%);
+}
+.A_LineUnderText--blue {
+  background: linear-gradient(90deg, #78aaff 0%, #fff 106%);
+}
+.A_LineUnderText--orange {
+  background: linear-gradient(90deg, #ff8989 0%, #fff 106%);
+}
+.A_LineUnderText--yellow {
+  background: linear-gradient(90deg, #ffd288 0%, #fff 106%);
+}
