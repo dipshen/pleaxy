@@ -21,13 +21,8 @@
     margin: auto auto;
   }
 
-  .A_pText {
-    margin-left: auto;
-    margin-right: 2.8vw;
-  }
-
   @media (max-width: 834px) {
-    max-width: 760px;
+    width: 86vw;
     left: 50%;
     transform: translateX(-50%);
     right: auto;
@@ -36,7 +31,8 @@
     min-height: 4.5vw;
     gap: 2vw;
     .A_logo img {
-      margin-right: 1.5vw;
+      width: 15.3vw;
+      height: 4.4vw;
     }
     .A_pText {
       margin-right: 0;
@@ -45,32 +41,24 @@
   }
 
   @media (max-width: 430px) {
+    width: 90vw;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    left: 0;
-    right: 0;
-    transform: none;
+    transform: translateX(-50%);
+    left: 50%;
     height: auto;
     top: 1vw;
-    gap: 1.5vw;
-    padding: 0 16px 1.5vw;
+    gap: 1vw;
+    padding: 0 1.6vw 1.5vw;
     box-sizing: border-box;
 
-    .A_logo {
-      margin-right: 0;
-      margin-left: 0;
-      width: 20vw;
-
-      img {
-        margin-right: 0;
-        width: 20vw;
-      }
+    .A_logo img {
+      margin-top: 2vw;
+      width: 25.1vw;
+      height: 7.2vw;
     }
     .M_Menu {
       margin: 0;
-      width: 100%;
-      max-width: 360px;
     }
     .A_MenuTelegram {
       display: none;

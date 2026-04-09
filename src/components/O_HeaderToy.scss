@@ -14,30 +14,30 @@
     color: #fff;
     margin-bottom: 0;
     width: 56.9vw;
-    max-width: 760px;
     align-items: center;
   }
 
   @media (max-width: 834px) {
-    padding: 14vw 37px 1.7vw;
+    padding-top: 11vw;
     min-height: 36vw;
     .A_H1 {
-      max-width: 760px;
+      width: 86vw;
     }
-  }
-  @media (max-width: 834px) {
-    padding: 14vw 37px 1.7vw;
-    min-height: 36vw;
-    .A_H1 {
-      max-width: 760px;
+    .A_ImgHead {
+      object-position: 82%;
     }
   }
 
   @media (max-width: 430px) {
-    padding: 16vw 16px 3vw;
+    padding-top: 22vw;
+    min-height: 65vw;
     .A_H1 {
-      width: 100%;
-      max-width: 100%;
+      width: 88vw;
+    }
+    .A_ImgHead {
+      object-position: 68%;
+      top: 30vw;
+      height: 35vw;
     }
   }
 }

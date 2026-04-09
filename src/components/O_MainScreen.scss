@@ -1,7 +1,9 @@
 .O_MainScreen {
+  display: contents;
   position: relative;
   width: 100%;
   height: 100%;
+  picture,
   img {
     width: 100%;
     height: 100%;
@@ -36,38 +38,48 @@
 
   @media (max-width: 834px) {
     height: 65vw;
-    min-height: 400px;
 
+    picture,
     img {
       height: 100%;
       object-fit: cover;
     }
     h1 {
-      font-size: 4.2vw;
-      top: 12vw;
+      font-size: 8.3vw;
+      padding-top: 28vw;
+      width: 70vw;
+      line-height: 100%;
     }
     h4 {
-      font-size: 2.2vw;
-      width: 70vw;
-      top: 18vw;
+      font-size: 3.2vw;
+      padding-top: 41vw;
+      width: 50vw;
     }
   }
 
   @media (max-width: 430px) {
-    padding: 0 16px;
     box-sizing: border-box;
+    height: 100vh;
+
+    picture,
+    img {
+      height: 100vh;
+      object-fit: cover;
+    }
 
     h1 {
-      font-size: 7.4vw;
-      top: 12vw;
+      font-size: 11.6vw;
+      padding-top: 14vw;
+      width: 90vw;
+      line-height: 100%;
     }
     h4 {
       font-size: 4.2vw;
-      width: 100%;
-      max-width: 320px;
+      padding-top: 16vw;
+      width: 70vw;
       left: 50%;
       transform: translateX(-50%);
-      top: 22vw;
+      top: 40vw;
     }
   }
 }

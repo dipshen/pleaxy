@@ -12,14 +12,15 @@
 
   @media (max-width: 834px) {
     max-width: 760px;
-    gap: 2vw;
-    margin-top: 2vw;
+    gap: 3vw;
+    margin-top: 3vw;
+    width: 86vw;
   }
 
   @media (max-width: 430px) {
     width: 100%;
     gap: 4vw;
-    padding: 0 16px;
-    margin-top: 28vw;
+    margin-top: 3vw;
+    width: 88vw;
   }
 }

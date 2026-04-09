@@ -13,20 +13,22 @@
     position: relative;
     margin-bottom: 0;
     width: 56.9vw;
-    max-width: 760px;
     align-items: center;
   }
 
   @media (max-width: 834px) {
-    margin: 14vw auto 0;
+    padding-top: 11vw;
+    min-height: 36vw;
+    .A_H1 {
+      width: 86vw;
+    }
   }
 
   @media (max-width: 430px) {
-    min-height: 40vw;
-    padding: 16vw 16px 3vw;
+    padding-top: 22vw;
+    min-height: 65vw;
     .A_H1 {
-      width: 100%;
-      max-width: 100%;
+      width: 88vw;
     }
   }
 

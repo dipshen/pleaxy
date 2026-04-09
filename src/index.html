@@ -13,7 +13,19 @@
     <nav id="menu"></nav>
 
     <div class="O_MainScreen">
-      <img src="images/MainScreen.jpg" alt="" />
+      <!-- <img src="images/MainScreen.jpg" alt="" /> -->
+      <picture>
+        <source
+          media="(max-width: 430px)"
+          srcset="images/MainScreen_phone.jpg"
+        />
+        <source
+          media="(max-width: 834px)"
+          srcset="images/MainScreen_tablet.jpg"
+        />
+        <source srcset="images/MainScreen.jpg" />
+        <img src="images/MainScreen.jpg" alt="" />
+      </picture>
       <h1>Онлайн медиа pleaxy</h1>
       <h4>
         Подробно и&nbsp;открыто пишем о&nbsp;разнообразии в&nbsp;сексе,

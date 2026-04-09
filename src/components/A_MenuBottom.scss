@@ -20,14 +20,14 @@
 
   @media (max-width: 834px) {
     border-radius: 3rem;
-    font-size: 2vw;
+    font-size: 2.2vw;
     padding: 0.9vw 1.8vw 1vw 1.8vw;
   }
 
   @media (max-width: 430px) {
     font-size: 3.5vw; /* ~15px */
     border-radius: 2rem;
-    padding: 2.2vw 6.6vw 2.3vw 6.6vw;
+    padding: 2.2vw 4vw 2.3vw 4vw;
   }
 
   &.active {

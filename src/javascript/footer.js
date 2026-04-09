@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
           <a href="/" class="A_FooterLogo">
             <img src="${logo}" alt="pleaxy" />
           </a>
-          <p class="A_FooterText">Онлайн медиа о разнообразии в сексе</p>
+          <p class="A_FooterText">Онлайн медиа о&nbsp;разнообразии в&nbsp;сексе</p>
         </div>
         <div class="A_FooterRight">
           <a href="https://t.me/pleaxy_media" class="A_FooterTg">telegram</a>
-          <p class="A_FooterText">Больше интересного в нашем канале</p>
+          <p class="A_FooterText">Больше интересного в&nbsp;нашем канале</p>
         </div>
       </div>
     `
