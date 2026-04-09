@@ -44,57 +44,20 @@
 ;// ./src/images/logo.svg
 const logo_namespaceObject = __webpack_require__.p + "images/2e8475c169cc155b7d3c.svg";
 ;// ./src/javascript/menu.js
-
-document.addEventListener('DOMContentLoaded', function () {
-  var MENU_ITEMS = [{
-    href: './inventory.html',
-    text: 'Инвентарь'
-  }, {
-    href: './practices.html',
-    text: 'Практики'
-  }, {
-    href: './articles.html',
-    text: 'Статьи'
-  }];
-  var menuContainer = document.getElementById('menu');
-  if (menuContainer) {
-    menuContainer.outerHTML = "\n      <nav class=\"O_Menu\">\n        <a href=\"./\" class=\"A_logo\">\n          <img src=\"".concat(logo_namespaceObject, "\" alt=\"pleaxy\" />\n        </a>\n        <div class=\"M_Menu\">\n          ").concat(MENU_ITEMS.map(function (item) {
-      return "<a class=\"A_MenuBottom\" href=\"".concat(item.href, "\">").concat(item.text, "</a>");
-    }).join(''), "\n        </div>\n        <a class=\"A_pText A_MenuTelegram\" href=\"https://t.me/pleaxy_media\">telegram</a>\n      </nav>\n    ");
-  }
-});
-
 // import logo from '../images/logo.svg'
-
 // document.addEventListener('DOMContentLoaded', function () {
-//   function getBasePath() {
-//     const pathname = window.location.pathname
-
-//     if (pathname.includes('pages/')) {
-//       return pathname.split('pages/')[0]
-//     }
-
-//     if (window.location.hostname === 'dipshen.github.io') {
-//       return '/pleaxy/'
-//     }
-
-//     return '/'
-//   }
-
-//   const BASE_PATH = getBasePath()
-
 //   const MENU_ITEMS = [
-//     { href: `${BASE_PATH}inventory.html`, text: 'Инвентарь' },
-//     { href: `${BASE_PATH}practices.html`, text: 'Практики' },
-//     { href: `${BASE_PATH}articles.html`, text: 'Статьи' }
+//     { href: './inventory.html', text: 'Инвентарь' },
+//     { href: './practices.html', text: 'Практики' },
+//     { href: './articles.html', text: 'Статьи' }
 //   ]
 
 //   const menuContainer = document.getElementById('menu')
 //   if (menuContainer) {
 //     menuContainer.outerHTML = `
 //       <nav class="O_Menu">
-//         <a href="${BASE_PATH}" class="A_logo">
-//           <img src="${BASE_PATH}images/logo.svg" alt="pleaxy" />
+//         <a href="./" class="A_logo">
+//           <img src="${logo}" alt="pleaxy" />
 //         </a>
 //         <div class="M_Menu">
 //           ${MENU_ITEMS.map(
@@ -107,12 +70,33 @@ document.addEventListener('DOMContentLoaded', function () {
 //     `
 //   }
 // })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var BASE_URL = window.location.origin + '/';
+  var MENU_ITEMS = [{
+    href: BASE_URL + 'sextoys.html',
+    text: 'Секс-игрушки'
+  }, {
+    href: BASE_URL + 'practices.html',
+    text: 'Практики'
+  }, {
+    href: BASE_URL + 'articles.html',
+    text: 'Статьи'
+  }];
+  var menuContainer = document.getElementById('menu');
+  if (menuContainer) {
+    menuContainer.outerHTML = "\n      <nav class=\"O_Menu\">\n        <a href=\"/\" class=\"A_logo\">\n          <img src=\"".concat(logo_namespaceObject, "\" alt=\"pleaxy\" />  <!-- logo \u0443\u0436\u0435 \u043F\u043E\u043B\u043D\u044B\u0439 URL \u043E\u0442 import -->\n        </a>\n        <div class=\"M_Menu\">\n          ").concat(MENU_ITEMS.map(function (item) {
+      return "<a class=\"A_MenuBottom\" href=\"".concat(item.href, "\">").concat(item.text, "</a>");
+    }).join(''), "\n        </div>\n        <a class=\"A_pText A_MenuTelegram\" href=\"https://t.me/pleaxy_media\">telegram</a>\n      </nav>\n    ");
+  }
+});
 ;// ./src/javascript/footer.js
 
 document.addEventListener('DOMContentLoaded', function () {
   var footerContainer = document.getElementById('footer');
   if (footerContainer) {
-    footerContainer.innerHTML = "\n      <div class=\"O_Footer\">\n        <div class=\"A_FooterLeft\">\n          <a href=\"/\" class=\"A_FooterLogo\">\n            <img src=\"".concat(logo_namespaceObject, "\" alt=\"pleaxy\" />\n          </a>\n          <p class=\"A_FooterText\">\u041E\u043D\u043B\u0430\u0439\u043D \u043C\u0435\u0434\u0438\u0430 \u043E \u0440\u0430\u0437\u043D\u043E\u043E\u0431\u0440\u0430\u0437\u0438\u0438 \u0432 \u0441\u0435\u043A\u0441\u0435</p>\n        </div>\n        <div class=\"A_FooterRight\">\n          <a href=\"https://t.me/pleaxy_media\" class=\"A_FooterTg\">telegram</a>\n          <p class=\"A_FooterText\">\u0411\u043E\u043B\u044C\u0448\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0433\u043E \u0432 \u043D\u0430\u0448\u0435\u043C \u043A\u0430\u043D\u0430\u043B\u0435</p>\n        </div>\n      </div>\n    ");
+    footerContainer.innerHTML = "\n      <div class=\"O_Footer\">\n        <div class=\"A_FooterLeft\">\n          <a href=\"/\" class=\"A_FooterLogo\">\n            <img src=\"".concat(logo_namespaceObject, "\" alt=\"pleaxy\" />\n          </a>\n          <p class=\"A_FooterText\">\u041E\u043D\u043B\u0430\u0439\u043D \u043C\u0435\u0434\u0438\u0430 \u043E&nbsp;\u0440\u0430\u0437\u043D\u043E\u043E\u0431\u0440\u0430\u0437\u0438\u0438 \u0432&nbsp;\u0441\u0435\u043A\u0441\u0435</p>\n        </div>\n        <div class=\"A_FooterRight\">\n          <a href=\"https://t.me/pleaxy_media\" class=\"A_FooterTg\">telegram</a>\n          <p class=\"A_FooterText\">\u0411\u043E\u043B\u044C\u0448\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0433\u043E \u0432&nbsp;\u043D\u0430\u0448\u0435\u043C \u043A\u0430\u043D\u0430\u043B\u0435</p>\n        </div>\n      </div>\n    ");
   }
 });
 ;// ./src/index.js
