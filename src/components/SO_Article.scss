@@ -1,7 +1,6 @@
 .SO_Article {
   display: flex;
   width: 56.9vw;
-  max-width: 760px;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.1vw;
@@ -10,8 +9,13 @@
   margin-right: auto;
   box-sizing: border-box;
 
+  .SO_MainPractices {
+    .A_H1 {
+      width: 56.9vw;
+    }
+  }
+
   @media (max-width: 834px) {
-    max-width: 760px;
     gap: 3vw;
     margin-top: 3vw;
     width: 86vw;
