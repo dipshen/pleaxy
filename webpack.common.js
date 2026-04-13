@@ -141,6 +141,60 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // Эрекционное кольцо
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_erection_ring.html',
+      filename: './pages/sextoy_erection_ring.html',
+      chunks: ['index']
+    }),
+
+    // Анальные шарики
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_anal_beads.html',
+      filename: './pages/sextoy_anal_beads.html',
+      chunks: ['index']
+    }),
+
+    // Мастурбатор
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_masturbator.html',
+      filename: './pages/sextoy_masturbator.html',
+      chunks: ['index']
+    }),
+
+    // Вибратор ванд
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_vibrator_wand.html',
+      filename: './pages/sextoy_vibrator_wand.html',
+      chunks: ['index']
+    }),
+
+    // Массажер простаты
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_anal_stimulator.html',
+      filename: './pages/sextoy_anal_stimulator.html',
+      chunks: ['index']
+    }),
+
+    // Виброяйцо
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/sextoy_vibro_egg.html',
+      filename: './pages/sextoy_vibro_egg.html',
+      chunks: ['index']
+    }),
+
     // Атрибуты
     new HtmlWebpackPlugin({
       hash: true,
@@ -213,6 +267,33 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // Фингеринг
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/practice_fingering.html',
+      filename: './pages/practice_fingering.html',
+      chunks: ['index']
+    }),
+
+    // Тантрический секс
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/practice_tantra_sex.html',
+      filename: './pages/practice_tantra_sex.html',
+      chunks: ['index']
+    }),
+
+    // Шибари
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/practice_shibary.html',
+      filename: './pages/practice_shibary.html',
+      chunks: ['index']
+    }),
+
     // Статьи
     new HtmlWebpackPlugin({
       hash: true,
@@ -228,6 +309,51 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/article_sextoys_care.html',
       filename: './pages/article_sextoys_care.html',
+      chunks: ['index']
+    }),
+
+    // Лубриканты
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/article_lubricants.html',
+      filename: './pages/article_lubricants.html',
+      chunks: ['index']
+    }),
+
+    // Презервативы
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/article_condoms.html',
+      filename: './pages/article_condoms.html',
+      chunks: ['index']
+    }),
+
+    // Покупка игрушек
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/article_buying_sex_toys.html',
+      filename: './pages/article_buying_sex_toys.html',
+      chunks: ['index']
+    }),
+
+    // Мастурбация и желания
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/article_masturbation_desires.html',
+      filename: './pages/article_masturbation_desires.html',
+      chunks: ['index']
+    }),
+
+    // Контрацепция
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/article_contraception.html',
+      filename: './pages/article_contraception.html',
       chunks: ['index']
     }),
 

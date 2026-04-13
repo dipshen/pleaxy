@@ -8,6 +8,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  > *:last-child {
+    font-weight: 600;
+  }
+
   @media (max-width: 834px) {
     width: 86vw;
   }
