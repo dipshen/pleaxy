@@ -7,8 +7,10 @@
 /* Меню и Футер */
 @import 'components/A_MenuBottom.scss';
 @import 'components/M_Menu.scss';
+@import 'components/M_Toggles.scss';
 @import 'components/O_Menu.scss';
 @import 'components/O_Footer.scss';
+@import 'components/O_Disclaimer.scss';
 
 /* Текст */
 @import 'components/A_H1.scss';

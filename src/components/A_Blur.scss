@@ -1,29 +1,96 @@
 .A_Blur {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   display: flex;
-  width: 100%;
-  height: 100%;
-  border-radius: 4rem;
-  padding: 0 2.1vw 1.8vw 2.1vw;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
+  border-radius: 40px;
+  padding: 2.1vw;
   background: rgba(64, 64, 64, 0.05);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  transform: translateZ(0);
-  transition: opacity 0.5s ease;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 
   @media (max-width: 834px) {
-    padding: 0 3.4vw 2.8vw 3.4vw;
-    border-radius: 3rem;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   @media (max-width: 430px) {
-    padding: 0 4.2vw 3.3vw 4.2vw;
-    border-radius: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  /* Маска: прозрачный круг там, где мышь (переменные x и y), остальное — черное (блюр) */
+  -webkit-mask-image: radial-gradient(
+    circle var(--size, 0px) at var(--x, -500px) var(--y, -500px),
+    transparent 99%,
+    black 100%
+  );
+  mask-image: radial-gradient(
+    circle var(--size) at var(--x) var(--y),
+    transparent 50%,
+    black 100%
+  );
+
+  /* Плавность появления/затухания круга */
+  transition: --size 0.3s ease;
+
+  transition:
+    --x 0.15s ease-out,
+    --y 0.15s ease-out,
+    --size 0.4s ease-out;
+}
+
+/* По умолчанию на мобилках блюр либо всегда есть, либо всегда выключен */
+.A_Blur_Effect {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(64, 64, 64, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* На мобилках маска не нужна, показываем блюр целиком */
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+/* Эффект прорезания включаем ТОЛЬКО для устройств с мышью */
+@media (hover: hover) and (pointer: fine) {
+  .A_Blur_Effect {
+    -webkit-mask-image: radial-gradient(
+      circle var(--size, 0px) at var(--x, -500px) var(--y, -500px),
+      transparent 80%,
+      black 100%
+    );
+    mask-image: radial-gradient(
+      circle var(--size, 0px) at var(--x, -500px) var(--y, -500px),
+      transparent 80%,
+      black 100%
+    );
   }
 }
-.A_Blur:hover {
-  background-color: transparent;
-  backdrop-filter: blur(0px);
+
+/* Состояние, когда блюр полностью выключен */
+body.no-blur .A_Blur,
+body.no-blur .A_Blur_Effect {
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+  background: transparent !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  opacity: 0 !important;
+  visibility: hidden;
 }
+
+/* Если хочешь, чтобы на мобилках блюр вообще исчезал при тапе (вместо круга) */
+/*@media (max-width: 1024px) {
+  .O_CardToy:active .A_Blur_Effect {
+    backdrop-filter: blur(0px);
+    background: rgba(0, 0, 0, 0);
+    transition: backdrop-filter 0.2s;
+  }
+}*/

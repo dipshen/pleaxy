@@ -17,3 +17,12 @@
     border-radius: 2rem;
   }
 }
+
+.A_ImgToy {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}

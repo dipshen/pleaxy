@@ -1,4 +1,4 @@
-.A_MenuBottom {
+/*.A_MenuBottom {
   display: inline-flex;
   padding: 0.6vw 1.1vw 0.7vw 1.1vw;
   align-items: center;
@@ -25,7 +25,7 @@
   }
 
   @media (max-width: 430px) {
-    font-size: 3.5vw; /* ~15px */
+    font-size: 3.5vw;
     border-radius: 2rem;
     padding: 2.2vw 4vw 2.3vw 4vw;
   }
@@ -33,5 +33,78 @@
   &.active {
     background: rgba(255, 136, 190, 0.25);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+*/
+
+.A_MenuBottom {
+  display: inline-flex;
+  padding: 0.6vw 1.1vw 0.7vw 1.1vw;
+  align-items: center;
+  border-radius: 3rem;
+  background: rgba(255, 255, 255, 0);
+  color: #000;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  &.active {
+    background: rgba(255, 136, 190, 0.25);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 834px) {
+    border-radius: 3rem;
+    font-size: 2.2vw;
+    padding: 0.9vw 1.8vw 1vw 1.8vw;
+  }
+
+  @media (max-width: 430px) {
+    font-size: 7vw;
+    padding: 0;
+    font-weight: 500;
+
+    &.active {
+      background: transparent;
+      box-shadow: none;
+      color: #ff88be;
+    }
+  }
+}
+
+/* Общие стили для кнопок-иконок */
+.A_Burger,
+.A_Close {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 430px) {
+  .A_Burger {
+    display: block;
+    height: 8vw;
+    width: auto;
+  }
+
+  .A_Close {
+    display: block;
+    height: 8vw;
+    width: auto;
   }
 }

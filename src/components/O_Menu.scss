@@ -1,4 +1,4 @@
-.O_Menu {
+/*.O_Menu {
   display: flex;
   align-items: center;
   position: fixed;
@@ -11,6 +11,10 @@
   right: 0;
   box-sizing: border-box;
 
+  .A_pText {
+    font-size: 1.2vw;
+  }
+
   .A_logo img {
     width: 8.9vw;
     height: 2.6vw;
@@ -22,7 +26,7 @@
   }
 
   @media (max-width: 834px) {
-    width: 86vw;
+    width: 93vw;
     left: 50%;
     transform: translateX(-50%);
     right: auto;
@@ -62,6 +66,90 @@
     }
     .A_MenuTelegram {
       display: none;
+    }
+  }
+}*/
+
+.O_Menu {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 1vw;
+  /*left: 50%;
+  transform: translateX(-50%);*/
+  width: 57vw;
+  z-index: 1000;
+  box-sizing: border-box;
+
+  .A_logo {
+    flex-shrink: 0;
+    img {
+      width: 8.9vw;
+      height: 2.6vw;
+      display: block;
+    }
+  }
+
+  .W_MenuContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* margin-left: 2vw; */
+  }
+
+  .W_MobileTop {
+    display: none;
+  }
+
+  @media (max-width: 834px) {
+    width: 93vw;
+    right: auto;
+    margin: 0;
+    height: auto;
+    min-height: 4.5vw;
+    gap: 2vw;
+    .A_logo img {
+      width: 15.3vw;
+      height: 4.4vw;
+    }
+    .A_pText {
+      margin-right: 0;
+      margin-left: 1.5vw;
+    }
+  }
+
+  @media (max-width: 430px) {
+    width: 88vw;
+    top: 5vw;
+    justify-content: space-between;
+
+    .A_logo img {
+      width: 25.1vw;
+      height: 7.2vw;
+    }
+
+    .W_MenuContent {
+      display: none; /* Скрыто до нажатия буpгера */
+      position: fixed;
+      inset: 0;
+      background: #ffffff;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5vw 6vw;
+      margin: 0;
+      z-index: 1001;
+    }
+
+    &.is-open .W_MenuContent {
+      display: flex;
+    }
+
+    .W_MobileTop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 12vw;
     }
   }
 }

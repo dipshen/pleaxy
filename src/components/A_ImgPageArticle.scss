@@ -1,14 +1,14 @@
 .A_ImgPageArticle {
   width: 100%;
   height: 100%;
-  border-radius: 4rem;
+  border-radius: 40px;
   position: relative;
 
   @media (max-width: 834px) {
-    border-radius: 3rem;
+    border-radius: 30px;
   }
 
   @media (max-width: 430px) {
-    border-radius: 2rem;
+    border-radius: 20px;
   }
 }
