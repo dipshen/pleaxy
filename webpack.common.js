@@ -7,6 +7,9 @@ const CopyPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
+const fs = require('fs')
+const analyticsCode = fs.readFileSync(path.resolve(__dirname, './src/partials/analytics.html'), 'utf8')
+
 const StaticSourceData = require('static-source-data')
 
 module.exports = {
@@ -72,7 +75,8 @@ module.exports = {
       // template: './src/index.ejs',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Инвентарь
@@ -81,7 +85,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/inventory.html',
       filename: './inventory.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Секс-игрушки
@@ -90,7 +95,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/sextoys.html',
       filename: './sextoys.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Вибратор кролик
@@ -99,7 +105,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_rabbit_vibrator.html',
       filename: './pages/sextoy_rabbit_vibrator.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Вибропуля
@@ -108,7 +115,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_vibro_bullet.html',
       filename: './pages/sextoy_vibro_bullet.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Фаллоимитатор
@@ -117,7 +125,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_dildo.html',
       filename: './pages/sextoy_dildo.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Вибратор
@@ -126,7 +135,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_vibrator.html',
       filename: './pages/sextoy_vibrator.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Клиторальный стимулятор
@@ -135,7 +145,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_clitoral_ctimulator.html',
       filename: './pages/sextoy_clitoral_ctimulator.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Анальная пробка
@@ -144,7 +155,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_butt_plug.html',
       filename: './pages/sextoy_butt_plug.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Эрекционное кольцо
@@ -153,7 +165,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_erection_ring.html',
       filename: './pages/sextoy_erection_ring.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Анальные шарики
@@ -162,7 +175,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_anal_beads.html',
       filename: './pages/sextoy_anal_beads.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Мастурбатор
@@ -171,7 +185,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_masturbator.html',
       filename: './pages/sextoy_masturbator.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Вибратор ванд
@@ -180,7 +195,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_vibrator_wand.html',
       filename: './pages/sextoy_vibrator_wand.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Массажер простаты
@@ -189,7 +205,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_anal_stimulator.html',
       filename: './pages/sextoy_anal_stimulator.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Виброяйцо
@@ -198,7 +215,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/sextoy_vibro_egg.html',
       filename: './pages/sextoy_vibro_egg.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Атрибуты
@@ -207,7 +225,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/attributes.html',
       filename: './attributes.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Практики
@@ -216,7 +235,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/practices.html',
       filename: './practices.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Анилингус
@@ -225,7 +245,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_analingus.html',
       filename: './pages/practice_analingus.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Кунилингус
@@ -234,7 +255,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_kunilingus.html',
       filename: './pages/practice_kunilingus.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Минет
@@ -243,7 +265,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_minet.html',
       filename: './pages/practice_minet.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Ролевые игры
@@ -252,7 +275,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_role_games.html',
       filename: './pages/practice_role_games.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Петтинг
@@ -261,7 +285,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_petting.html',
       filename: './pages/practice_petting.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Ваксплей
@@ -270,7 +295,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_waxplay.html',
       filename: './pages/practice_waxplay.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Фингеринг
@@ -279,7 +305,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_fingering.html',
       filename: './pages/practice_fingering.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Тантрический секс
@@ -288,7 +315,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_tantra_sex.html',
       filename: './pages/practice_tantra_sex.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Шибари
@@ -297,7 +325,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/practice_shibary.html',
       filename: './pages/practice_shibary.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Статьи
@@ -306,7 +335,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Уход за игрушками
@@ -315,7 +345,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/article_sextoys_care.html',
       filename: './pages/article_sextoys_care.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Лубриканты
@@ -324,7 +355,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/article_lubricants.html',
       filename: './pages/article_lubricants.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Презервативы
@@ -333,7 +365,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/article_condoms.html',
       filename: './pages/article_condoms.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Покупка игрушек
@@ -342,7 +375,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/article_buying_sex_toys.html',
       filename: './pages/article_buying_sex_toys.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Мастурбация и желания
@@ -351,7 +385,8 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/article_masturbation_desires.html',
       filename: './pages/article_masturbation_desires.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Контрацепция
@@ -360,27 +395,37 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/article_contraception.html',
       filename: './pages/article_contraception.html',
-      chunks: ['index']
+      chunks: ['index'],
+      analytics: analyticsCode
     }),
 
     // Internal pages
-    // new HtmlWebpackPlugin({
-    //   hash: true,
-    //   scriptLoading: 'blocking',
-    //   template: './src/pages/page.html',
-    //   filename: './pages/page.html',
-    //   chunks: ['page']
-    // }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/page.html',
+      filename: './pages/page.html',
+      chunks: ['page']
+    }),
 
-    // Partials
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/analytics.html'),
-        location: 'analytics',
-        template_filename: '*',
-        priority: 'replace'
+        path: path.join(__dirname, './src/partials/analytics.html'), // путь к файлу с кодом Метрики
+        location: 'head', // плагин сам найдет тег <head>
+        priority: 'high', // и вставит код в самое начало <head>
+        template_filename: '*' // применит ко всем (*) HTML страницам автоматически!
       }
     ]),
+
+    // Partials
+    // new HtmlWebpackPartialsPlugin([
+    //   {
+    //     path: path.join(__dirname, './src/partials/analytics.html'),
+    //     location: 'analytics',
+    //     template_filename: '*',
+    //     priority: 'replace'
+    //   }
+    // ]),
 
     new CopyPlugin({
       patterns: [
