@@ -17,6 +17,9 @@ body {
   font-weight: 500;
   gap: 7vw;
 }
+body > *:first-child {
+  margin-top: 0;
+}
 
 @media (max-width: 834px) {
   body > .SO_Section,
