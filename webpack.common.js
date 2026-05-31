@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const webpack = require('webpack')
 const path = require('path')
@@ -13,12 +14,17 @@ module.exports = {
     index: './src/index.js'
     // page: './src/page.jsx'
   },
+  // output: {
+  //   filename: '[name].js',
+  //   path: path.resolve(__dirname, 'docs')
+  //   // publicPath: '/pleaxy/'
+  //   // clean: true
+  // },
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'docs')
-    // publicPath: '/pleaxy/'
-    // clean: true
-  },
+     filename: '[name].js',
+     path: path.resolve(__dirname, 'docs'),
+     publicPath: '/'
+   },
   module: {
     rules: [
       {
@@ -374,7 +380,13 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
-    ])
+    ]),
+
+    new CopyPlugin({
+      patterns: [
+        { from: 'public', to: '.' } // Копирует файл CNAME из папки public прямо в корень папки docs
+      ]
+    })
 
     // new StaticSourceData({
     //   indexData: {

@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/dipshen/pleaxy/issues"
   },
-  "homepage": "https://github.com/dipshen/pleaxy#readme",
+  "homepage": "https://pleaxy.ru",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js",
@@ -22,6 +22,7 @@
     "@babel/preset-react": "^7.27.1",
     "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^14.0.0",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "file-loader": "^6.2.0",
@@ -42,9 +43,9 @@
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
+    "airtable": "^0.12.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "airtable": "^0.12.2",
     "static-source-data": "^1.0.0"
   }
 }
