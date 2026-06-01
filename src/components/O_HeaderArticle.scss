@@ -19,6 +19,13 @@
 
   .M_HeaderContent {
     min-height: 15.5vw;
+    @media (max-width: 834px) {
+      min-height: 22vw;
+    }
+
+    @media (max-width: 430px) {
+      min-height: 40vw;
+    }
   }
 
   @media (max-width: 834px) {
@@ -26,7 +33,7 @@
     min-height: 36vw;
 
     .A_H1 {
-      width: 86vw;
+      max-width: 86vw;
     }
   }
 
@@ -34,7 +41,7 @@
     padding-top: 22vw;
     min-height: 65vw;
     .A_H1 {
-      width: 88vw;
+      max-width: 88vw;
     }
   }
 }

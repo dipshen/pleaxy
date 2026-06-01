@@ -7,4 +7,22 @@
   align-items: flex-start;
   min-height: 12.6vw;
   justify-content: space-between;
+
+  @media (max-width: 834px) {
+    width: auto;
+    min-height: 23vw;
+    .A_H1 {
+      position: relative;
+      margin-bottom: 0;
+      max-width: 56.9vw;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 430px) {
+    min-height: 40vw;
+    .A_H1 {
+      max-width: 88vw;
+    }
+  }
 }
