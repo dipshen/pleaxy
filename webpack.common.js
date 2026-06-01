@@ -8,7 +8,10 @@ const webpack = require('webpack')
 const path = require('path')
 
 const fs = require('fs')
-const analyticsCode = fs.readFileSync(path.resolve(__dirname, './src/partials/analytics.html'), 'utf8')
+const analyticsCode = fs.readFileSync(
+  path.resolve(__dirname, './src/partials/analytics.html'),
+  'utf8'
+)
 
 const StaticSourceData = require('static-source-data')
 
@@ -24,10 +27,10 @@ module.exports = {
   //   // clean: true
   // },
   output: {
-     filename: '[name].js',
-     path: path.resolve(__dirname, 'docs'),
-     publicPath: '/'
-   },
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'docs'),
+    publicPath: '/'
+  },
   module: {
     rules: [
       {
@@ -431,6 +434,12 @@ module.exports = {
       patterns: [
         { from: 'public', to: '.' } // Копирует файл CNAME из папки public прямо в корень папки docs
       ]
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/yandex_462e3273abdb6b05.html', // Имя твоего файла от Яндекса
+      filename: 'yandex_462e3273abdb6b05.html', // Имя, которое будет на сервере
+      inject: false // Важно: чтобы Webpack не вставлял скрипты в этот файл
     })
 
     // new StaticSourceData({
