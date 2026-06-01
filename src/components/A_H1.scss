@@ -20,3 +20,39 @@
     max-width: 90vw;
   }
 }
+
+.A_H1--pink {
+  background: linear-gradient(90deg, #000 20%, #ff88be 80%, #282828 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+.A_H1--purpur {
+  background: linear-gradient(90deg, #000 20%, #8a7ae5 80%, #282828 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+.A_H1--blue {
+  background: linear-gradient(90deg, #000 20%, #78aaff 80%, #282828 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+.A_H1--orange {
+  background: linear-gradient(90deg, #000 20%, #ff8989 80%, #282828 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+.A_H1--yellow {
+  background: linear-gradient(90deg, #000 20%, #ffd288 80%, #282828 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}

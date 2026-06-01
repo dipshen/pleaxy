@@ -34,6 +34,7 @@
 @import 'components/O_MainScreen.scss';
 @import 'components/SO_Section.scss';
 @import 'components/O_HeadTextSection.scss';
+@import 'components/M_HeaderContent.scss';
 
 @import 'components/A_ImgHead.scss';
 @import 'components/M_Navigation.scss';
