@@ -436,14 +436,11 @@ module.exports = {
     //   ]
     // })
 
-    // В массив plugins добавь:
     new CopyPlugin({
       patterns: [
         {
-          from: 'src/yandex_462e3273abdb6b05.html',
-          to: 'yandex_462e3273abdb6b05.html',
-          // Эта настройка скажет вебпаку не трогать содержимое
-          info: { minimized: true }
+          from: path.resolve(__dirname, 'src/yandex_462e3273abdb6b05.html'),
+          to: path.resolve(__dirname, 'docs/yandex_462e3273abdb6b05.html')
         }
       ]
     })
