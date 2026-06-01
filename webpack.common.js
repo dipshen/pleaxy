@@ -430,17 +430,31 @@ module.exports = {
     //   }
     // ]),
 
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: 'public', to: '.' } // Копирует файл CNAME из папки public прямо в корень папки docs
+    //   ]
+    // })
+
+    // В массив plugins добавь:
     new CopyPlugin({
       patterns: [
-        { from: 'public', to: '.' } // Копирует файл CNAME из папки public прямо в корень папки docs
+        {
+          from: 'src/yandex_462e3273abdb6b05.html',
+          to: 'yandex_462e3273abdb6b05.html',
+          // Эта настройка скажет вебпаку не трогать содержимое
+          info: { minimized: true }
+        }
       ]
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/yandex_462e3273abdb6b05.html', // Имя твоего файла от Яндекса
-      filename: 'yandex_462e3273abdb6b05.html', // Имя, которое будет на сервере
-      inject: false // Важно: чтобы Webpack не вставлял скрипты в этот файл
     })
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/yandex_462e3273abdb6b05.txt',
+    //   filename: 'yandex_462e3273abdb6b05.html',
+    //   contenthash: false,
+    //   inject: false,
+    //   minify: false
+    // })
 
     // new StaticSourceData({
     //   indexData: {
